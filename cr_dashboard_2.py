@@ -49,7 +49,7 @@ with cols3:
 @st.cache_data(ttl=120)
 def load_data():
     # Use credentials to create a client to interact with the Google Drive API
-     scope = ["https://spreadsheets.google.com/feeds", "https://www.googleapis.com/auth/drive"]
+    scope = ["https://spreadsheets.google.com/feeds", "https://www.googleapis.com/auth/drive"]
     
     # Directly access Streamlit secrets and parse them as JSON
     credentials_dict = st.secrets["gcp"] 
