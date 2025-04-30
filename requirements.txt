@@ -3,4 +3,3 @@ pandas
 streamlit-autorefresh
 gspread
 oauth2client
-streamlit-components
