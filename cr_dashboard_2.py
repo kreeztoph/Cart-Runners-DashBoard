@@ -340,9 +340,9 @@ if floor in stations and side in stations[floor]:
             + "".join(
                 [
                     (
-                        f"<div style='background-color:{get_station_color(s, retrieved_df, retrieved_df_totes)}; padding:40px; border:2px solid black; font-size:30px; width:250px; height:200px; text-align:center; display:flex; align-items:center; justify-content:center;'>{s}<br>{fetch_live_value(s, retrieved_df)}<br>{fetch_live_value(s, retrieved_df_totes)}</div>"
+                        f"<div style='background-color:{get_station_color(s, retrieved_df, retrieved_df_totes)}; padding:40px; border:2px solid black; font-size:24px; width:250px; height:200px; text-align:center; display:flex; align-items:center; justify-content:center;'>{s}<br>{fetch_live_value(s, retrieved_df)}<br>{fetch_live_value(s, retrieved_df_totes)}</div>"
                         if s
-                        else f"<div style='background-color:{get_station_color(s, retrieved_df, retrieved_df_totes)}; padding:40px; border:2px solid black; font-size:30px; width:200px; height:150px; text-align:center; display:flex; align-items:center; justify-content:center;'>&nbsp;</div>"
+                        else f"<div style='background-color:{get_station_color(s, retrieved_df, retrieved_df_totes)}; padding:40px; border:2px solid black; font-size:24px; width:200px; height:150px; text-align:center; display:flex; align-items:center; justify-content:center;'>&nbsp;</div>"
                     )
                     for s in side_stations
                 ]
@@ -369,7 +369,7 @@ if floor in stations and side in stations[floor]:
         for s in west_stations[half:]:
             st.markdown(
                 "<div style='display:flex; gap:20px;'>"
-                + f"<div style='background-color:{get_station_color(s, retrieved_df, retrieved_df_totes)}; padding:20px; border:2px solid black; font-size:24px; width:200px; height:150px; text-align:center; display:flex; align-items:center; justify-content:center;margin-bottom:20px;'>{s}<br>{fetch_live_value(s, retrieved_df)}<br>{fetch_live_value(s, retrieved_df_totes)}</div>"
+                + f"<div style='background-color:{get_station_color(s, retrieved_df, retrieved_df_totes)}; padding:20px; border:2px solid black; font-size:30px; width:200px; height:150px; text-align:center; display:flex; align-items:center; justify-content:center;margin-bottom:20px;'>{s}<br>{fetch_live_value(s, retrieved_df)}<br>{fetch_live_value(s, retrieved_df_totes)}</div>"
                 + "</div>",
                 unsafe_allow_html=True,
             )
