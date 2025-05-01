@@ -31,7 +31,7 @@ with cols2:
     # Vertically center title
     title_html = """
     <div style="justify-content:bottom; align-items:center;">
-        <h1 style='font-size: 50px; margin-left: 10%;'>
+        <h1 style='font-size: 60px; margin-left: 10%;'>
             <span style='color: #6CB4EE;'>Amazon LCY3</span> 
             <span style='color: #7D4551;'>Cart Runner Dashboard</span>
         </h1>
