@@ -40,9 +40,10 @@ with cols2:
     st.markdown(title_html, unsafe_allow_html=True)
 
 with cols3:
-    # Display the last updated timestamp
-    last_updated = datetime.now().strftime("%Y-%m-%d %H:%M:%S")
+    # Add 1 hour to current time
+    last_updated = (datetime.now() + timedelta(hours=1)).strftime("%Y-%m-%d %H:%M:%S")
     st.write(f"Last Updated: {last_updated}")
+
 
 
 # ---- Google Sheets Setup ----
