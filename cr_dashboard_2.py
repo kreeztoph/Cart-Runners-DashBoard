@@ -43,7 +43,7 @@ with cols3:
     # Add 1 hour to current time
     last_updated = (datetime.now() + timedelta(hours=1)).strftime("%Y-%m-%d %H:%M:%S")
     st.write(f"Last Updated: {last_updated}")
-    st.info('Please chime @opokumej for any concerns)
+    st.info('Please chime @opokumej for any concerns')
 
 
 
