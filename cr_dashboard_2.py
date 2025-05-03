@@ -3,7 +3,7 @@ import pandas as pd
 from streamlit_autorefresh import st_autorefresh
 import gspread
 from oauth2client.service_account import ServiceAccountCredentials
-from datetime import datetime
+from datetime import datetime,timedelta
 import streamlit as st
 import streamlit.components.v1 as components
 
